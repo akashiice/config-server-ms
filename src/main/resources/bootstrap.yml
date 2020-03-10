@@ -1,0 +1,21 @@
+#Application name
+spring:
+  application:
+    name:config-server
+  cloud:
+    config:
+      server:
+        git:
+          #Verify any repository issue in service startup
+          clone-on-start: true
+          #Git repo location
+          uri: C:\\Users\\akash\\IdeaProjects\\git-config-local
+
+#Server port
+server:
+  port: 8888
+
+#Disable security of the Management endpoint
+management:
+  security:
+    enabled:false
